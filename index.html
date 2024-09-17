@@ -10,11 +10,14 @@
         background-color: #333;
         color: #fff;
         margin: 0;
-        padding: 20px;
+        padding: 0; /* Removed padding to allow full width usage */
+        box-sizing: border-box; /* Includes padding in the width calculation */
     }
     .navbar {
         background-color: #222;
         padding: 10px;
+        width: 100%; /* Ensures navbar extends fully across */
+        box-sizing: border-box; /* Includes padding in the width calculation */
     }
     a {
         color: #9fddff;
@@ -23,15 +26,19 @@
     }
     .container {
         padding: 20px;
+        box-sizing: border-box; /* Includes padding in the width calculation */
     }
     .footer {
         font-size: 0.8em;
         position: fixed;
         bottom: 0;
-        width: 100%;
+        left: 0; /* Ensure the footer starts from the far left */
+        right: 0; /* Ensure the footer extends to the far right */
+        width: 100%; /* This ensures it takes the full width */
         background-color: #222;
         padding: 10px;
         text-align: center;
+        box-sizing: border-box; /* Includes padding in the width calculation */
     }
     img {
         width: 100px;
@@ -56,7 +63,7 @@
     </ul>
 
     <h2>Connect</h2>
-    <p>Hey, I’m Cole! Currently a sophomore at Collin College, working toward a Bachelor of Applied Technology in Cybersecurity. I love tinkering with Cisco routers and switches, and I’m all about cloud engineering and computer networking. Down the road, I’ve got my eye on an MBA from LSUS and a future in IT management as an IT Director!<p>
+    <p>Hey, I’m Cole! Currently a sophomore at Collin College, working toward a Bachelor of Applied Technology in Cybersecurity. I love tinkering with Cisco routers and switches, and I’m all about cloud engineering and computer networking. Down the road, I’ve got my eye on an MBA from LSUS and a future in IT management as an IT Director!</p>
     <img src="https://i.redd.it/6l9zni2jsjw51.jpg" alt="pumpk1n.xyz Logo">
 </div>
 
@@ -66,4 +73,3 @@
 </div>
 </body>
 </html>
-
