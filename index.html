@@ -1,91 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>pumpk1n.xyz</title>
-<style>
-    body {
-        font-family: 'Courier New', Courier, monospace;
-        background-color: #333;
-        color: #fff;
-        margin: 0;
-        padding: 0; /* Ensures there is no space around the edges */
-        box-sizing: border-box; /* Includes padding and border in the width */
-    }
-    .navbar {
-        background-color: #222;
-        padding: 10px;
-        text-align: center; /* Centers navbar items */
-        box-sizing: border-box;
-    }
-    a {
-        color: #9fddff;
-        text-decoration: none;
-        padding: 5px;
-        display: inline-block; /* Ensures links are aligned properly */
-    }
-    .container {
-        padding: 20px;
-        box-sizing: border-box;
-    }
-    .footer {
-        font-size: 0.8em;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        background-color: #222;
-        padding: 10px;
-        text-align: center;
-        box-sizing: border-box;
-    }
-    img {
-        width: 70%; /* Adjusted to make the logo smaller */
-        max-width: 150px; /* Adjusted to decrease the maximum size */
-        display: block;
-        margin: 10px auto;
-    }
-    @media (max-width: 600px) {
-        .navbar a {
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to pumpk1n.xyz - Cole Addison's personal website showcasing certifications and experience in cybersecurity and IT.">
+    <title>pumpk1n.xyz</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #333;
+            color: #fff;
+            line-height: 1.6;
+        }
+        a {
+            color: #9fddff;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #fff;
+        }
+        img {
+            display: block;
+            margin: 10px auto;
+            width: 70%;
+            max-width: 150px;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #222;
             padding: 10px;
-            font-size: 0.9em; /* Larger font size for smaller screens */
+            text-align: center;
         }
+
+        /* Container */
+        .container {
+            padding: 20px;
+        }
+
+        /* Footer */
         .footer {
-            position: relative; /* Changes position to flow naturally on small screens */
-            padding: 20px 10px; /* Larger padding */
+            font-size: 0.8rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #222;
+            padding: 10px;
+            text-align: center;
         }
-        body, .container {
-            padding: 5px; /* Less padding on small screens */
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .navbar a {
+                padding: 10px;
+                font-size: 1rem;
+            }
+            .footer {
+                position: relative;
+                padding: 20px 10px;
+            }
+            .container {
+                padding: 10px;
+            }
         }
-    }
-</style>
+
+        /* Resume Image Styling */
+        .resume-img {
+            width: 100%;
+            max-width: 800px;
+            border: 2px solid #9fddff;
+            border-radius: 8px;
+        }
+
+    </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>welcome to pumpk1n.xyz! :D</h1>
-    <h2>Certifications</h2>
-    <ul>
-        <li>Microsoft Certified: Azure Fundamentals (AZ-900)</li>
-        <li>AWS Certified Cloud Practitioner (AWS CCP)</li>
-        <li>Cisco Certified Support Technician Networking (CCST-N)</li>
-        <li>CompTIA Tech+</li>
-    </ul>
-
-    <h2>Connect</h2>
-    <p>Hey, I’m Cole! Currently a sophomore at Collin College, working toward a Bachelor of Applied Technology in Cybersecurity. I love tinkering with Cisco routers and switches, and I’m all about cloud engineering and computer networking. Down the road, I’ve got my eye on an MBA from LSUS and a future in IT management as an IT Director!</p>
-    <img src="/pumpkin.jpg" alt="pumpk1n.xyz Logo">
-
-<!-- Embedded Resume Section -->
-<h2>Resume</h2>
-<img src="/resume.png" alt="Resume" style="width:100%; max-width:800px;" />
-
-    <!-- Alternative using iframe (uncomment if you prefer this method) -->
-    <!-- <iframe src="/resume.pdf" width="100%" height="600px"></iframe> -->
+<!-- Navbar -->
+<div class="navbar">
+    <!-- Add navbar links if necessary in the future -->
 </div>
 
+<!-- Main Container -->
+<div class="container">
+    <h1>Welcome to pumpk1n.xyz! :D</h1>
+
+    <!-- Certifications Section -->
+    <section>
+        <h2>Certifications</h2>
+        <ul>
+            <li>Microsoft Certified: Azure Fundamentals (AZ-900)</li>
+            <li>AWS Certified Cloud Practitioner (AWS CCP)</li>
+            <li>Cisco Certified Support Technician Networking (CCST-N)</li>
+            <li>CompTIA Tech+</li>
+        </ul>
+    </section>
+
+    <!-- Connect Section -->
+    <section>
+        <h2>Connect</h2>
+        <p>Hey, I’m Cole! Currently a sophomore at Collin College, working toward a Bachelor of Applied Technology in Cybersecurity. I love tinkering with Cisco routers and switches, and I’m all about cloud engineering and computer networking. Down the road, I’ve got my eye on an MBA from LSUS and a future in IT management as an IT Director!</p>
+        <img src="/pumpkin.jpg" alt="pumpk1n.xyz Logo" title="pumpk1n.xyz Logo">
+    </section>
+
+    <!-- Embedded Resume Section -->
+    <section>
+        <h2>Resume</h2>
+        <img src="/resume.png" alt="Cole Addison's Resume" class="resume-img" title="Cole Addison's Resume">
+    </section>
+</div>
+
+<!-- Footer -->
 <div class="footer">
     © pumpk1n.xyz, 2024<br>
     Powered by Blood, Sweat, and Ubuntu Server. Sponsored by SysDVR!
