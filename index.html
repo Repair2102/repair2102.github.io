@@ -1,92 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>welcome to pumpk1n.xyz :D</title>
-    <style>
-        body {
-            background-color: #f2f2f2; /* light gray background */
-            font-family: Arial, sans-serif; /* nice font */
-            color: #333333; /* dark gray text */
-            text-align: center;
-            padding-top: 50px;
-            margin: 0;
-        }
-
-        #container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding-bottom: 20px; /* reduced space for the banner */
-            overflow: hidden; /* hide overflow */
-        }
-
-        h1 {
-            font-size: 2em;
-            margin-bottom: 20px;
-            white-space: nowrap; /* prevent wrapping */
-            animation: moveBanner 10s linear infinite; /* animate banner */
-        }
-
-        @keyframes moveBanner {
-            0% {
-                transform: translateX(100%);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-
-        #gif {
-            width: 300px; /* larger width */
-            height: auto; /* maintain aspect ratio */
-            margin: 0 auto;
-            display: block;
-        }
-
-        #links {
-            margin-top: 30px;
-        }
-
-        a {
-            color: #333333; /* dark gray links */
-            text-decoration: none;
-            margin: 10px;
-            display: inline-block;
-            transition: all 0.3s ease;
-            background-color: transparent; /* Keep background transparent by default */
-        }
-
-        a:hover {
-            color: #ffffff; /* white text on hover */
-        }
-
-        #banner {
-            width: 400px; /* smaller width */
-            margin: 20px auto 0; /* centered below the buttons */
-        }
-
-        #links a {
-            font-weight: bold;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>pumpk1n.xyz</title>
+<style>
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        background-color: #333;
+        color: #fff;
+        margin: 0;
+        padding: 20px;
+    }
+    .navbar {
+        background-color: #222;
+        padding: 10px;
+    }
+    a {
+        color: #9fddff;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+    .container {
+        padding: 20px;
+    }
+    .footer {
+        font-size: 0.8em;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #222;
+        padding: 10px;
+        text-align: center;
+    }
+    img {
+        width: 100px;
+        display: block;
+        margin: 20px auto;
+    }
+</style>
 </head>
-
 <body>
-    <div id="container">
-        <h1>welcome to pumpk1n.xyz :D</h1>
-        <img id="gif" src="https://web.archive.org/web/20091027075202/http://hk.geocities.com/vsc_sky/pumpkin.gif" alt="Animated Pumpkin">
-        <div id="links">
-            <a href="#">blog</a>
-            <a href="#">rss feed</a>
-            <a href="#">projects</a>
-            <a href="#">homelab</a>
-            <a href="#">youtube</a>
-            <a href="#">about me</a>
-        </div>
-    </div>
-    <a href="https://www.linuxquestions.org/questions/" style="display: inline-block;"><img id="banner" src="https://web.archive.org/web/20090901195530if_/http://geocities.com/linuxhelppage/winbloat.gif" alt="Banner" style="border: none;"></a>
-</body>
+<div class="navbar">
+    [pumpk1n.xyz] $ <a href="/about">About</a> <a href="/contact">Resume</a> <a href="/tutorials">Projects</a>
+</div>
 
+<div class="container">
+    <h1>welcome to pumpk1n.xyz! :D</h1>
+    <h2>Certifications</h2>
+    <ul>
+        <li>Microsoft Certified: Azure Fundamentals (AZ-900)</li>
+        <li>AWS Certified Cloud Practitioner (AWS CCP)</li>
+        <li>Cisco Certified Support Technician Networking (CCST-N)</li>
+        <li>CompTIA Tech+</li>
+    </ul>
+
+    <h2>Connect</h2>
+    <p>Hey, I’m Cole! Currently a sophomore at Collin College, working toward a Bachelor of Applied Technology in Cybersecurity. I love tinkering with Cisco routers and switches, and I’m all about cloud engineering and computer networking. Down the road, I’ve got my eye on an MBA from LSUS and a future in IT management as an IT Director!<p>
+    <img src="https://i.redd.it/6l9zni2jsjw51.jpg" alt="pumpk1n.xyz Logo">
+</div>
+
+<div class="footer">
+    © pumpk1n.xyz, 2024<br>
+    Powered by Blood, Sweat, and Ubuntu Server. Sponsored by SysDVR!
+</div>
+</body>
 </html>
+
