@@ -5,11 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cole Addison: Aspiring IT Project Manager</title>
     <style>
-        body {
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
             margin: 0;
+            padding: 0;
+            height: 100%;
             font-family: Georgia, sans-serif;
             background-color: #ffffff;
             text-align: center;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
         }
         header {
             margin-top: 20px;
@@ -34,11 +43,13 @@
         .resume-file {
             display: block;
             max-width: 100%;
+            max-height: 80vh; /* Adjust height for better fit */
             height: auto;
             margin: 0 auto;
         }
         footer {
-            margin: 20px auto;
+            margin: 50px auto; /* Create space between footer and content */
+            padding: 20px 0;
         }
         footer img {
             width: 150px; /* Scale down the 900x200 image */
